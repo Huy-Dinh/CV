@@ -1,0 +1,173 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{burgundy}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Huy}{Dinh}
+\title{Resume}                               % optional, remove / comment the line if not wanted
+\address{Lailbergstra{\ss}e 17G}{71296 Heimsheim}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+49~(176)~5789~4829}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{dinhquochuy.eeit@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{dinh-quoc-huy}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+\social[github]{Huy-Dinh}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[80pt][0pt]{linkedinPic}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{October 2017-- November 2019}{Master of Science in Embedded Systems and Microelectronics}{Darmstadt University of Applied Sciences}{Darmstadt}{\textit{1.51}}{}
+\cventry{October 2011-- November 2015}{Bachelor of Engineering in Electrical Engineering and Information Technology}{Frankfurt University of Applied Sciences}{Frankfurt}{\textit{1.8}}{}  % arguments 3 to 6 can be left empty
+
+\section{Master thesis}
+\cvitem{title}{\emph{Concept and implementation of a generic vehicle data protocol for a motorcycle-smartphone integration solution}}
+\cvitem{supervisors}{Professor Dr.-Ing. Peter Fromm}
+\cvitem{description}{Development of a generic firmware infrastructure and a protocol to enable the collection and transmission of vehicle data from a Two-Wheeler Integrated Connectitivy Cluster to a smartphone. The protocol also supports bi-directional communication to facilitate the sending of vehicle settings from the smartphone down on to the cluster.}
+
+\section{Experience}
+\cventry{May 2019--November 2019}{Master Thesis Student}{Robert Bosch GmbH}{Renningen}{}
+{
+Investigate available technologies, develop new embedded software and protocols.
+\begin{itemize}%
+    \item Carry out studies and automated benchmarks on the current communication infrastructure. 
+    \item Conceptualize and implement a data server - client profile system used for vehicle data and settings.
+    \item Design and implement a generic protocol to handle bi-directional vehicle data/settings communication.
+\end{itemize}
+}
+
+\cventry{October 2018--March 2019}{Software Developer Intern}{Robert Bosch GmbH}{Renningen}{}
+{
+Support and develop software for the Two-Wheeler and eBike project teams
+\begin{itemize}%
+    \item Bring up and maintain the embedded codebase of a logging system for Two-Wheeler cluster displays. 
+    \item Develop an automated analysis Jupyter-based framework for eBike GPS field tests.
+    \item Design and write test ride data analysis tools.
+\end{itemize}
+}
+
+\cventry{October 2017--September 2018}{Student Research Assistant}{Darmstadt University of Applied Sciences}{Darmstadt}{}
+{
+Provide software assistance to a safety-oriented research project on Infineon AURIX tricore microcontrollers.
+\begin{itemize}%
+    \item Write, test and integrate firmware.
+    \item Improve wireless link reliability and interrupt system signal flow.
+    \item Write technical documents.
+\end{itemize}
+}
+
+\cventry{July 2016--July 2017}{Firmware Engineer}{Misfit Wearables (Fossil)}{Ho Chi Minh, Vietnam and Burlingame, the USA}{}
+{
+Develop embedded software on Bluetooth Low Energy System-on-chips.
+\begin{itemize}%
+    \item Write and test embedded software.
+    \item Investigate possible MCU replacements for future products.
+    \item Supervise algorithm field tests.
+    \item Write testing/operation tools in Python.
+\end{itemize}
+}
+
+\cventry{February 2016--June 2016}{Design Service Engineer}{Ascenx Technology Vietnam}{Ho Chi Minh, Vietnam}{}
+{
+Provide support in engineering service.
+\begin{itemize}%
+    \item Provide document support for spare parts management.
+    \item Find replacement for obsolete parts.
+    \item Re-engineer discontinued parts.
+    \item Plan and supervise offshore operability tests.
+\end{itemize}
+}
+
+\section{Languages}
+\cvitemwithcomment{English}{Fluent}{IELTS 8.5}
+\cvitemwithcomment{German}{Beginner}{A2}
+\cvitemwithcomment{Vietnamese}{Fluent}{Mother tongue}
+
+\section{Computer skills}
+\cvitem{Programming languages}{C, C++, Python, Java}
+\cvitem{Version control}{Git, SVN, Jazz}
+\cvitem{IDEs}{Visual Studio Code, Eclipse,...}
+
+%\section{Interests}
+%\cvitem{hobby 1}{Description}
+%\cvitem{hobby 2}{Description}
+%\cvitem{hobby 3}{Description}
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+%\section{References}
+%\begin{cvcolumns}
+%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+\end{document}
+
+
+%% end of file `template.tex'.
