@@ -26,7 +26,7 @@
 % personal data
 \name{Huy}{Dinh}
 \title{Resume}                               % optional, remove / comment the line if not wanted
-\address{Lailbergstra{\ss}e 17G}{71296 Heimsheim}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\address{Bismarckstra{\ss}e 8}{73312 Geislingen an der Steige}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+49~(176)~5789~4829}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 %\phone[fixed]{+2~(345)~678~901}
 %\phone[fax]{+3~(456)~789~012}
@@ -57,7 +57,7 @@
 \makecvtitle
 
 \section{Education}
-\cventry{October 2017-- November 2019}{Master of Science in Embedded Systems and Microelectronics}{Darmstadt University of Applied Sciences}{Darmstadt}{\textit{1.51}}{}
+\cventry{October 2017-- November 2019}{Master of Science in Embedded Systems and Microelectronics}{Darmstadt University of Applied Sciences}{Darmstadt}{\textit{1.3}}{}
 \cventry{October 2011-- November 2015}{Bachelor of Engineering in Electrical Engineering and Information Technology}{Frankfurt University of Applied Sciences}{Frankfurt}{\textit{1.8}}{}  % arguments 3 to 6 can be left empty
 
 \section{Master thesis}
@@ -66,23 +66,27 @@
 \cvitem{description}{Development of a generic firmware infrastructure and a protocol to enable the collection and transmission of vehicle data from a Two-Wheeler Integrated Connectitivy Cluster to a smartphone. The protocol also supports bi-directional communication to facilitate the sending of vehicle settings from the smartphone down on to the cluster.}
 
 \section{Experience}
-\cventry{May 2019--November 2019}{Master Thesis Student}{Robert Bosch GmbH}{Renningen}{}
+
+\cventry{February 2020--Now}{Software Engineer}{TeamViewer AG}{Göppingen}{}
 {
-Investigate available technologies, develop new embedded software and protocols.
+Full-stack development of Remote Management solutions: Endpoint Protection, Web Monitoring, Backup.
 \begin{itemize}%
-    \item Carry out studies and automated benchmarks on the current communication infrastructure. 
-    \item Conceptualize and implement a data server - client profile system used for vehicle data and settings.
-    \item Design and implement a generic protocol to handle bi-directional vehicle data/settings communication.
+    \item Designed a technical security solution for Web Monitoring and Endpoint Protection.
+    \item Designed and implemented a caching mechanism to improve server side performance.
+    \item Developed extensions to the TeamViewer client software in C++.
+    \item Developed microservices in C++.
+    \item Front-end and Back-end Web development with React TypeScript and Azure.
 \end{itemize}
 }
 
-\cventry{October 2018--March 2019}{Software Developer Intern}{Robert Bosch GmbH}{Renningen}{}
+\cventry{October 2018--November 2019}{Software Developer Intern - Master Thesis Student}{Robert Bosch GmbH}{Renningen}{}
 {
 Support and develop software for the Two-Wheeler and eBike project teams
 \begin{itemize}%
-    \item Bring up and maintain the embedded codebase of a logging system for Two-Wheeler cluster displays. 
-    \item Develop an automated analysis Jupyter-based framework for eBike GPS field tests.
-    \item Design and write test ride data analysis tools.
+    \item Brought up and maintained the embedded code base of a logging system for Two-Wheeler cluster displays. 
+    \item Developed an automated analysis Jupyter-based framework for eBike GPS field tests.
+    \item Conceptualized and implemented a data server - client profile system used for vehicle data and settings.
+    \item Designed and implemented a generic protocol to handle bi-directional vehicle data/settings communication.
 \end{itemize}
 }
 
@@ -90,20 +94,19 @@ Support and develop software for the Two-Wheeler and eBike project teams
 {
 Provide software assistance to a safety-oriented research project on Infineon AURIX tricore microcontrollers.
 \begin{itemize}%
-    \item Write, test and integrate firmware.
-    \item Improve wireless link reliability and interrupt system signal flow.
-    \item Write technical documents.
+    \item Greatly improved the reliability of a ZigBee communication link with hardware flow control.
+    \item Refactored the interrupt handling system to allow for better ease of use.
+    \item Kept the software documented.
 \end{itemize}
 }
 
 \cventry{July 2016--July 2017}{Firmware Engineer}{Misfit Wearables (Fossil)}{Ho Chi Minh, Vietnam and Burlingame, the USA}{}
 {
-Develop embedded software on Bluetooth Low Energy System-on-chips.
+Embedded software development on Bluetooth Low Energy System-on-chips.
 \begin{itemize}%
-    \item Write and test embedded software.
-    \item Investigate possible MCU replacements for future products.
-    \item Supervise algorithm field tests.
-    \item Write testing/operation tools in Python.
+    \item Wrote and tested embedded software for wearable fitness trackers.
+    \item Ported common code onto different microcontrollers to assess their usability.
+    \item Developed software for testing/operation equipments in Python.
 \end{itemize}
 }
 
@@ -111,20 +114,20 @@ Develop embedded software on Bluetooth Low Energy System-on-chips.
 {
 Provide support in engineering service.
 \begin{itemize}%
-    \item Provide document support for spare parts management.
-    \item Find replacement for obsolete parts.
-    \item Re-engineer discontinued parts.
-    \item Plan and supervise offshore operability tests.
+    \item Provided document support for spare parts management.
+    \item Took care of finding replacements for obsolete machine parts.
+    \item Re-engineered discontinued parts.
+    \item Planned and supervised offshore operability tests.
 \end{itemize}
 }
 
 \section{Languages}
 \cvitemwithcomment{English}{Fluent}{IELTS 8.5}
-\cvitemwithcomment{German}{Beginner}{A2}
+\cvitemwithcomment{German}{Conversational}{B1}
 \cvitemwithcomment{Vietnamese}{Fluent}{Mother tongue}
 
 \section{Skills}
-\cvitem{Programming languages}{C, C++, Python, Java, C\#}
+\cvitem{Programming languages}{C, C++, Python, C\#, JavaScript, TypeScript, Go}
 \cvitem{Communication protocols}{UART, CAN, SPI, I\textsuperscript{2}C, Linux IPC}
 \cvitem{Version control}{Git, SVN, Jazz}
 \cvitem{Operating Systems}{FreeRTOS, Embedded Linux, OSEK}
